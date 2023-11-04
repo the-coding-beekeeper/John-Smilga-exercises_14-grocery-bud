@@ -1,0 +1,148 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f5f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+}
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  width: 90%;
+  max-width: 600px;
+  min-height: 10rem;
+  background-color: #ffffff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  margin-top: 4rem;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  font-size: 20px;
+  font-weight: 700;
+}
+form {
+  width: 90%;
+  height: 2rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#input-field {
+  width: 80%;
+  height: 100%;
+  background-color: #f1f5f8;
+  color: #515f65;
+  border: none;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding-left: 1rem;
+  font-size: 16px;
+
+}
+.submit-button, .edit-button {
+  width: 20%;
+  height: 100%;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border: none;
+  background-color: #a5d5f8;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#submit-button:hover {
+  color: white;
+  background-color: #4eb0f7;
+}
+#list {
+  width: 90%;
+}
+#info-message {
+  position:absolute;
+  top: 1.5rem;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  padding: 0.2rem;
+  color:#515f65;
+  font-size: 12px;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  border-radius: 5px;
+}
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  color: #515f65;
+}
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+.edit-icon {
+width: 15px;
+cursor: pointer;
+margin-right: 0.5rem;
+}
+.delete-icon {
+  width: 20px;
+  cursor: pointer;
+}
+.clear-items {
+  color: rgb(242, 168, 180);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.clear-items:hover {
+  color: #515f65;
+}
+.icon-link {
+  font-size: 10px;
+  margin-top: 10rem;
+}
